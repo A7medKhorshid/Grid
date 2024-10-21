@@ -1,0 +1,494 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent{
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    "item1 item1 item2 item2"
+    "item3 item4 item4 item5"
+    "item6 item7 item7 item5"
+    "item8 item9 item10 item10";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
+}
+
+/* item1 sec */
+.item1{
+    grid-area: item1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .item1 .img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+
+.item1 img{
+    width: 249px;
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-bottom: -3.5px;
+}
+
+.item1 .txt h4, h3, p{ 
+    margin: 20px 0;
+}
+
+.item1 .txt{
+    width: 32%;
+}
+
+.item1 .txt h4{
+    font-family: Montserrat;
+    color: #9FA3A7;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.item1 .txt h3{
+    font-family: Arvo;
+    color: #333333;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.item1 .txt p{
+    font-family: Arvo;
+    color: #9FA3A7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+/* item1 sec */
+
+
+/* item2 sec */
+
+.item2{ 
+    grid-area: item2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F8F9;
+    text-align: center;
+}
+
+.item2 .txt h4{
+    font-family: Montserrat;
+    color: #9FA3A7;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.item2 .txt h3{
+    font-family: Arvo;
+    color: #333333;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.item2 a{
+    color: #27B9C2;
+    font-size: 14px;
+    font-family: "Open Sans";
+    line-height: 26px;
+    font-weight: 400;
+}
+/* item2 sec */
+
+
+
+/* item3 sec */
+.item3{
+    grid-area: item3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F05638;
+    text-align: center;
+}
+
+.item3 img{
+    width: 300px;
+}
+
+.item3 h3{
+    font-family: Arvo;
+    color: #FFFBFB;    
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.item3 a{
+    font-family: "Open Sans";
+    color: #FFC80A;    
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+}
+
+.item3 a strong{    
+    font-size: 16px;
+}
+/* item3 sec */
+
+
+
+/* item4 sec */
+.item4{
+    grid-area: item4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 60px;
+    padding-right: 4%;
+    padding-left: 4%;
+    gap: 5rem;
+}
+
+.item4 .img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 180px;
+}
+
+.item4 .txt{
+    width: 40%;
+}
+
+.item4 img{
+    width: 450px;
+    position: relative;
+    left: -165%;
+}
+
+.item4 .img h4{
+    font-family: Montserrat;
+    color: #9FA3A7;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 20px;
+}
+
+.item4 .img h3{
+    font-family: Arvo;
+    color: #333333;    
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.item4 .txt p{
+    font-family: "Open Sans";
+    color: #9FA3A7;    
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.item4 .txt a{
+    font-family: "Open Sans";
+    color: #27B9C2; 
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+}
+/* item4 sec */
+
+
+
+/* item5 sec */
+.item5{
+    grid-area: item5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8F76BC;
+    overflow: hidden;
+    text-align: center;
+    gap: 3rem;
+    color: #FFFFFF;
+}
+
+.item5 .img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 373px;
+    height: 373px;
+    border-radius: 50%;
+    background-color: #8166b0;
+    margin-top: -50px;
+}
+
+.item5 .img h3{
+    font-family: "Open Sans";
+    font-size: 10px;
+    line-height: 23px;
+    letter-spacing: 2.4px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: hsla(0, 0%, 100%, .08);
+    padding: 2px 13px;
+    border-radius: 60px;
+}
+
+.item5 .img h3 i{
+    color: #FFC80A;
+}
+
+
+.item5 img{
+    width: 239px;
+}
+
+.item5 .img h4{
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.item5 .txt{
+    width: 70%;
+    margin-top: -30px;
+}
+
+.item5 .txt h2{
+    font-family: Arvo;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.item5 .txt p{
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    padding-bottom: 15px;
+}
+
+.item5 .txt a{
+    font-family: "Open Sans";
+    font-size: 12px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #FFC80A;
+    border-radius: 30px;
+    padding: 20px 20px;
+}
+/* item5 sec */
+
+
+/* item6 sec */
+.item6{
+    grid-area: item6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F8F9;
+    overflow: hidden;
+    text-align: center;
+}
+
+.item6 img{
+    width: 248px;
+    margin-left: -35px;
+}
+
+.item6 .txt h3{
+    font-family: Arvo;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333333;
+}
+
+.item6 a{
+    font-family: "Open Sans";
+    color: #27B9C2;    
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 2.4px;
+    text-decoration: none;
+}
+
+.item6 a strong{    
+    font-size: 16px;
+}
+/* item6 sec */
+
+
+/* item7 sec */
+.item7{
+    grid-area: item7;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: #93B6B7;
+    overflow: hidden;
+    gap: 2rem;
+    position: relative;
+}
+
+.item7 img{
+    width: 540px;
+    margin-bottom: -5px;
+}
+
+.item7 .txt h3{
+   font-family: Arvo;
+   font-size: 22px;
+   line-height: 32px;
+   font-weight: 400;
+   color: #FFFFFF;
+   text-align: center;
+}
+
+.item7 .best{
+    font-family: "Open Sans";
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2px;
+    background-color: #FA684F;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    padding: 0px 10px;
+    border-radius: 3px;
+    color: white;
+}
+/* item7 sec */
+
+/* item8 sec */
+.item8{
+    grid-area: item8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #38D5F4;
+    text-align: center;
+    overflow: hidden;
+}
+
+.item8 i{
+    font-size: 40px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #F5FA0C;
+}
+
+.item8 .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: #35cfed;
+}
+
+.item8 h3{
+    font-family: Arvo;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+/* item8 sec */
+
+
+/* item9 sec */
+.item9{
+    grid-area: item9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F8F9;
+    position: relative;
+    text-align: center;
+}
+
+.item9 .pop{
+    font-family: "Open Sans";
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 2px;
+    background-color: #7BC424;
+    left: 40%;
+    top:20%;
+    position: absolute;
+    padding: 0px 10px;
+    border-radius: 3px;
+    color: white;
+}
+
+.item9 h3{
+    font-family: Arvo;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #333333;
+    padding-top: 15px;
+}
+/* item9 sec */
+
+/* item10 sec */
+.item10{
+    grid-area: item10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C2C2C;
+    overflow: hidden;
+}
+
+.item10 img{
+    width: 271px;
+    position: relative;
+    left: -40%;
+}
+
+.item10 h3{
+    font-family: Arvo;
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 400;
+    color: white;
+}

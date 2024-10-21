@@ -1,0 +1,139 @@
+@media screen and (max-width: 550px){
+    .parent{
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 1fr 0.24fr 0.5fr 1fr 0.24fr 0.5fr;
+        grid-template-areas: 
+        "item2"
+        "item1"
+        "item3"
+        "item6"
+        "item4"
+        "item8"
+        "item7"
+        "item5"
+        "item9"
+        "item10";
+    }
+
+    .item1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .item1 .txt{
+        width: 80%;
+    }
+
+    .item1 img{
+        position: relative;
+        left: -30px;
+    }
+
+    .item4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .item4 img{
+        width: 788px;
+        position: relative;
+        left: -130%;
+    }
+
+    .item4 .img{
+        max-width: 100%;
+    }
+
+    .item4 .txt{
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .item7 img{
+        width: 383px;
+        position: relative;
+        left: -20px;
+    }
+
+    .item10{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item10 img{
+        position: relative;
+        left: -23%;
+        top: -10px;
+    }
+}
+
+@media screen and (min-width: 320px){
+    .item4 img{
+        width: 90%;
+        position: relative;
+        left: -80px;
+    }
+
+    .item7 img{
+        width: 90%;
+        position: relative;
+        left: -20px;
+    }
+}
+
+@media (min-width: 360px){
+    .item4 img{
+        position: relative;
+        left: -70;
+    }
+
+    .item7 img{
+        position: relative;
+        left: -25px;
+    }
+}
+
+@media screen and (min-width: 390px){
+    .item4 img{
+        /* width: 588px; */
+        position: relative;
+        right: -70px;
+    }
+}
+
+@media screen and (min-width: 414px){
+    .item4 img{
+        position: relative;
+        left: -25%;
+    }
+
+    .item7 img{
+        position: relative;
+        left: -30px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .item4 img{
+        width: 450px;
+        position: relative;
+        left: -290px;
+    }
+
+    .item7 img{
+        position: relative;
+        left: -50px;
+    }
+}
+
+
+
+
+
